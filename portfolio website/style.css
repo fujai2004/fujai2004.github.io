@@ -563,6 +563,118 @@ header u1 a{
 
 
 
+/* Work Experience Section */
+.work-experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+    margin-bottom: 100px;
+}
+
+.experience-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    background-color: rgba(8, 0, 32, 0.9);
+    border-radius: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 1px solid rgba(114, 127, 222, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #008baa88, #7e42a788, #6600c588, #6070fd88, #2a46ff88, #0099ff88, #008ead88);
+    z-index: -1;
+    filter: blur(8px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(114, 161, 222, 0.15);
+}
+
+.experience-card:hover::before {
+    opacity: 0.5;
+}
+
+.experience-card h2 {
+    color: #727fde;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.experience-card h3 {
+    color: #e0e0e0;
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.experience-card .date {
+    color: #a0a0a0;
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.experience-card ul {
+    color: #e0e0e0;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.experience-card li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .experience-card {
+        padding: 20px;
+    }
+
+    .experience-card h2 {
+        font-size: 20px;
+    }
+
+    .experience-card h3 {
+        font-size: 16px;
+    }
+
+    .experience-card .date {
+        font-size: 12px;
+    }
+
+    .experience-card ul {
+        font-size: 14px;
+    }
+}
+
 
 
 
