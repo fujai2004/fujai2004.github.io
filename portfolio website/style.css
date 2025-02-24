@@ -662,7 +662,49 @@ header u1 a{
     margin-top: 100px;
   }
   
- 
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-item {
+    display: flex;
+    align-items: center;
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-item:hover {
+    color: #727fde;
+  }
+  
+  .footer-item i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .footer-item span {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+  }
+  
+  .footer-copyright {
+    color: #a0a0a0;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
 
 
 
