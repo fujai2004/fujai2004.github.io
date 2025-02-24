@@ -338,6 +338,125 @@ header u1 a{
     transform: scale(1.05);
 }
 
+/* My Projects */
+.my-projects{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    height: 100vh;
+    margin-top: 200px;
+    margin-bottom: 700px;
+}
+
+.project-vidbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+    cursor: pointer;
+    min-width: 300px; /* Reduced from 400px */
+    max-width: 600px; /* Added max-width */
+    transition: 0.5s;
+}
+
+.project-vidbox img { /* Added specific styling for images */
+    width: 100%;
+    height: auto;
+    max-height: 350px; /* Added max-height */
+    object-fit: contain;
+    box-shadow: 0 0 10px lightgray;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.project-vidbox img:hover {
+    box-shadow: 0 0 20px lightgray;
+}
+
+.project-card {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Added max-width */
+    height: auto; /* Changed from 40% */
+    min-height: 400px; /* Added min-height */
+    align-items: center;
+    gap: 5%; /* Reduced from 10% */
+    justify-content: center;
+    margin-bottom: 50px; /* Added margin */
+}
+
+
+.project-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 50%;
+    padding-left: 10%;
+}
+
+.project-info h1 {
+    width: 90%;
+    font-size: 32px; /* Increased from 25px */
+    font-weight: 600;
+    text-wrap: nowrap;
+    margin-bottom: 15px; /* Increased from 10px */
+    margin-top: 0;
+    max-width: 450px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    color: #fff; /* Changed from inherited color */
+    text-shadow: 0 0 10px rgba(114, 127, 222, 0.3);
+}
+
+.project-info p {
+    width: 90%;
+    max-width: 400px;
+    min-width: 300px;
+    margin-bottom: 50px;
+    margin-top: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    color: #e0e0e0; /* Slightly softer than pure white */
+}
+
+.project-info button {
+    color: white;
+    padding: 12px 20px; /* Increased padding */
+    border-radius: 10px;
+    border: 1px solid #727fdeb4;
+    background-color: #2200493d;
+    box-shadow: 0 0 5px #727fde86;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.project-info button:hover{
+    box-shadow: 0 0 15px #727fde86;
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .image-wrapper {
