@@ -123,6 +123,7 @@ header u1 a{
 .hero-info{
     position: absolute;
     left: 5%;
+    top: 43%;
 }
 
 .hero-info .hero-info-title{
@@ -167,8 +168,16 @@ header u1 a{
     }
 }
 
+.hero-vid-box{
+    position: absolute;
+    right: 3%;
+    top: 13%;
+}
 
-
+.hero-vid-box video{
+    height: 900px;
+    mix-blend-mode: difference;
+}
 
 
 
