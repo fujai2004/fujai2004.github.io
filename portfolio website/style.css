@@ -160,12 +160,17 @@ header u1 a{
     margin-bottom: 30px;
 }
 
-.hero-info p{
+.hero-info p {
     max-width: 550px;
-    line-height: 25px;
+    line-height: 1.6;
     margin-bottom: 40px;
-    font-size: 20px;
-}
+    font-size: 22px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
 
 /* Gradient Animation */
 .gradient{
