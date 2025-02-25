@@ -1,5 +1,5 @@
   section {
-    scroll-margin-top: 80px; /* Adjust this value based on your header height */
+    scroll-margin-top: 80px; 
   }
 
 body{
@@ -229,7 +229,7 @@ header u1 a{
 }
 
 .info-section .section-title {
-    font-size: 56px; /* Even larger for this specific section */
+    font-size: 56px; 
     margin-bottom: 50px;
   }
 
@@ -271,15 +271,14 @@ header u1 a{
     flex-direction: column;
     position: relative;
     width: 100%;
-    background-color: rgba(8, 0, 32, 0.9); /* Made darker for better contrast */
-    border-radius: 20px;
+    background-color: rgba(8, 0, 32, 0.9);
     padding: 25px;
     box-sizing: border-box;
     gap: 15px;
     transition: all 0.3s ease;
     border: 1px solid rgba(114, 127, 222, 0.3);
     overflow: hidden;
-    z-index: 1; /* Ensure content stays above the glow effect */
+    z-index: 1; 
 }
 
 .card::before {
@@ -299,11 +298,11 @@ header u1 a{
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 20px rgba(114, 161, 222, 0.15);
-    background-color: rgba(8, 0, 32, 0.95); /* Slightly darker on hover */
+    background-color: rgba(8, 0, 32, 0.95); 
 }
 
 .card:hover::before {
-    opacity: 0.5; /* Reduced opacity for softer glow */
+    opacity: 0.5; 
 }
 
 .card h1 {
@@ -311,10 +310,10 @@ header u1 a{
     font-size: 24px;
     margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600; /* Increased from 500 to 600 */
+    font-weight: 600; 
     position: relative;
     z-index: 2;
-    letter-spacing: 0.2px; /* Added slight letter spacing */
+    letter-spacing: 0.2px; 
 }
 
 .card p {
@@ -323,7 +322,7 @@ header u1 a{
     line-height: 1.8;
     margin-bottom: 15px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400; /* Increased from 300 to 400 */
+    font-weight: 400; 
     position: relative;
     z-index: 2;
     letter-spacing: 0.3px;
@@ -374,15 +373,15 @@ header u1 a{
     width: 50%;
     position: relative;
     cursor: pointer;
-    min-width: 300px; /* Reduced from 400px */
-    max-width: 600px; /* Added max-width */
+    min-width: 300px; 
+    max-width: 600px; 
     transition: 0.5s;
 }
 
-.project-vidbox img { /* Added specific styling for images */
+.project-vidbox img { 
     width: 100%;
     height: auto;
-    max-height: 350px; /* Added max-height */
+    max-height: 350px; 
     object-fit: contain;
     box-shadow: 0 0 10px lightgray;
     border-radius: 20px;
@@ -396,13 +395,13 @@ header u1 a{
 .project-card {
     display: flex;
     width: 100%;
-    max-width: 1200px; /* Added max-width */
-    height: auto; /* Changed from 40% */
-    min-height: 400px; /* Added min-height */
+    max-width: 1200px;
+    height: auto; 
+    min-height: 400px; 
     align-items: center;
-    gap: 5%; /* Reduced from 10% */
+    gap: 5%; 
     justify-content: center;
-    margin-bottom: 50px; /* Added margin */
+    margin-bottom: 50px; 
 }
 
 
@@ -417,15 +416,15 @@ header u1 a{
 
 .project-info h1 {
     width: 90%;
-    font-size: 32px; /* Increased from 25px */
+    font-size: 32px; 
     font-weight: 600;
     text-wrap: nowrap;
-    margin-bottom: 15px; /* Increased from 10px */
+    margin-bottom: 15px; 
     margin-top: 0;
     max-width: 450px;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.5px;
-    color: #fff; /* Changed from inherited color */
+    color: #fff; 
     text-shadow: 0 0 10px rgba(114, 127, 222, 0.3);
 }
 
@@ -440,12 +439,12 @@ header u1 a{
     font-weight: 300;
     line-height: 1.6;
     letter-spacing: 0.3px;
-    color: #e0e0e0; /* Slightly softer than pure white */
+    color: #e0e0e0; 
 }
 
 .project-info button {
     color: white;
-    padding: 12px 20px; /* Increased padding */
+    padding: 12px 20px; 
     border-radius: 10px;
     border: 1px solid #727fdeb4;
     background-color: #2200493d;

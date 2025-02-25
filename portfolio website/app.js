@@ -1,9 +1,9 @@
-// Smooth scroll function
+
 function smoothScroll(target, duration) {
     var target = document.querySelector(target)
     var targetPosition = target.getBoundingClientRect().top
     var startPosition = window.pageYOffset
-    var distance = targetPosition - 80 // Subtract header height
+    var distance = targetPosition - 80 
     var startTime = null
   
     function animation(currentTime) {
@@ -24,19 +24,17 @@ function smoothScroll(target, duration) {
     requestAnimationFrame(animation)
   }
   
-  // Add click event listeners to navigation links
   document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.querySelectorAll("header u1 a")
     navLinks.forEach((link) => {
       link.addEventListener("click", function (e) {
         e.preventDefault()
         const target = this.getAttribute("href")
-        smoothScroll(target, 1000) // Adjust the duration (in ms) to make scrolling slower or faster
+        smoothScroll(target, 1000)
       })
     })
   })
   
-  // Function to highlight active section in navigation
   function highlightActiveSection() {
     const sections = document.querySelectorAll("section")
     const navLinks = document.querySelectorAll("header u1 a")
@@ -61,7 +59,6 @@ function smoothScroll(target, duration) {
     })
   }
   
-  // Call the function when the page loads
   document.addEventListener("DOMContentLoaded", highlightActiveSection)
   
   
