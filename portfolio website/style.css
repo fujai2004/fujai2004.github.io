@@ -77,7 +77,7 @@ header u1 a{
     gap: 40px;
 }
 
-.box-icons a{
+.box-icons a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,14 +89,13 @@ header u1 a{
     color: lightgray;
     border-radius: 50%;
     transition: 0.3s;
-}
-
-.box-icons a:hover{
+  }
+  
+  .box-icons a:hover {
     background-color: #727fde;
     color: black;
     box-shadow: 0 0 15px #727fde;
-
-}
+  }
 
 .blackhole-box{
     position: absolute;
@@ -225,21 +224,34 @@ header u1 a{
     }
 }
 
-.info-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    max-width: 1200px;
-    margin: 100px auto;
-}
+.info-section .section-title {
+    font-size: 56px; /* Even larger for this specific section */
+    margin-bottom: 50px;
+  }
 
-.section-title {
-    font-size: 40px;
+  .section-title {
+    font-size: 72px;
     font-weight: 700;
-    margin-bottom: 30px;
+    color: #ffffff;
     text-align: center;
-}
+    margin-bottom: 50px;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 15px;
+    text-shadow: 0 0 20px rgba(114, 127, 222, 0.3);
+  }
+
+  .section-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 4px;
+    background: linear-gradient(90deg, #727fde, #72a1de);
+    border-radius: 2px;
+  }
 
 .info-cards {
     display: flex;
@@ -768,4 +780,21 @@ header u1 a{
         height: auto;
     }
 }
-	
+
+@media (max-width: 1200px) {
+    .section-title {
+      font-size: 60px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 48px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 36px;
+    }
+  }
